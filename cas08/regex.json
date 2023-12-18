@@ -1,0 +1,6 @@
+[{"regex" : "[A-Z]{2}", "broj_pojavljivanja" : 2}, 
+  {"regex" : "a+", "broj_pojavljivanja" : 7},
+  {"regex" : "####", "broj_pojavljivanja" : 0},
+  {"regex" : "^Ovo", "broj_pojavljivanja" : 1},
+  {"regex" : "[0-9]+", "broj_pojavljivanja" : 4},
+  {"regex" : "[a-z]{2,5}", "broj_pojavljivanja" : 4}]

@@ -14,3 +14,4 @@ Repozitorijum sadrži materijali sa časova vježbi iz predmeta Leksička analiz
   - čas09: Regularni izrazi - nastavak, obilazak direktorijuma
   - čas10: Konačni automati, konstrukcija Tompsona, minimalizacija
   - čas11: Konstrukcija Gluškova, proizvod automata, transduktori
+  - čas12: Flex

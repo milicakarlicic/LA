@@ -1,5 +1,5 @@
 # LA
-Repozitorijum sadrži materijali sa časova vježbi iz predmeta Leksička analiza na Matematičkom fakultetu. 
+Repozitorijum sadrži materijale sa časova vježbi iz predmeta Leksička analiza na Matematičkom fakultetu. 
 
 
 ## Materijali
@@ -15,3 +15,4 @@ Repozitorijum sadrži materijali sa časova vježbi iz predmeta Leksička analiz
   - čas10: Konačni automati, konstrukcija Tompsona, minimalizacija
   - čas11: Konstrukcija Gluškova, proizvod automata, transduktori
   - čas12: Flex
+  - čas13: Flex - nastavak

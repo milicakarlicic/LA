@@ -16,25 +16,26 @@ ka_naziv_zadatka = re.compile(r'[1-4]\.(cpp|py|java|c)')
 # (alas, 2) -> java
 # za domaci: alas -> [ekst_1_zad, ekst_2_zad, ekst_3_zad, ekst_4_zad]
 studenti = {}
-for naziv_fajla in os.listdir(putanja_dir):
-    rez = ka_naziv_dir.fullmatch(naziv_fajla)
+for naziv_poddir in os.listdir(putanja_dir):
+    rez = ka_naziv_dir.fullmatch(naziv_poddir)
     if rez is None:
         continue
 
-    putanja_poddir = os.path.join(putanja_dir, naziv_fajla)
+    putanja_poddir = os.path.join(putanja_dir, naziv_poddir)
     if not os.path.isdir(putanja_poddir):
         continue
 
-        for naziv_zadatka in os.listdir(putanja_poddir):
-            rez = ka_naziv_zadatka.fullmatch(naziv_zadatka)putanja_zadatak = os.path.join(putanja_poddir, naziv_zadatka)
-            if rez is None or not os.path.isfile(putanja_zadatak):
-                continue
+    for naziv_zadatka in os.listdir(putanja_poddir):
+        rez = ka_naziv_zadatka.fullmatch(naziv_zadatka)
+        putanja_zadatak = os.path.join(putanja_poddir, naziv_zadatka)
+        if rez is None or not os.path.isfile(putanja_zadatak):
+            continue
 
-            # naziv_zadatka '1.c' --> split --> ['1', 'c']
-            pom = naziv_zadatka.split('.')
-            br_zadatka = int(pom[0])
-            ekstenzija = pom[1]
-            studenti[(naziv_fajla, br_zadatka)] = ekstenzija
+        # naziv_zadatka '1.c' --> split --> ['1', 'c']
+        pom = naziv_zadatka.split('.')
+        br_zadatka = int(pom[0])
+        ekstenzija = pom[1]
+        studenti[(naziv_poddir, br_zadatka)] = ekstenzija
 
 svi_studenti = {}
 try:
@@ -66,12 +67,13 @@ try:
     for student in svi_studenti:
         f.write('<tr>\n')
         f.write('<td>' + svi_studenti[student] + '</td>\n')
-        f.write('<td>' + student + '</td>\n')for br_zad in range(1, 5):
-        if (student, br_zad) in studenti:
-            ekstenzija = studenti[(student, br_zad)]
-            f.write('<td>' + ekstenzija + '</td>\n')
-        else:
-            f.write('<td>' + '-' + '</td>\n')
+        f.write('<td>' + student + '</td>\n')
+        for br_zad in range(1, 5):
+            if (student, br_zad) in studenti:
+                ekstenzija = studenti[(student, br_zad)]
+                f.write('<td>' + ekstenzija + '</td>\n')
+            else:
+                f.write('<td>' + '-' + '</td>\n')
         f.write('</tr>\n')
 
     f.write('</table>\n')

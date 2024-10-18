@@ -3,8 +3,9 @@ Repozitorijum sadrži materijale sa časova vježbi iz predmeta Leksička analiz
 
 
 ## Materijali
-  - čas01: Kompilatori i interpretatori, azbuka, jezik, definicija regularnih jezika i izraza
-  - čas02: Proširenja regularnih izraza, gramzivost, nestrpljivost
+  - čas01: Kompilatori i interpretatori. Azbuka. Jezik. Definicija regularnih jezika i izraza
+  - čas02: Proširenja regularnih izraza. Gramzivost. Lenjo izračunavanje. Sidra.
+  <!--
   - čas03: Sidra, preduvidi i postuvidi, grupisanje teksta
   - čas04: Terminal, grep, uniq, head, tail
   - čas05: Sed, sort
@@ -15,4 +16,4 @@ Repozitorijum sadrži materijale sa časova vježbi iz predmeta Leksička analiz
   - čas10: Konačni automati, konstrukcija Tompsona, minimalizacija
   - čas11: Konstrukcija Gluškova, proizvod automata, transduktori
   - čas12: Flex
-  - čas13: Flex - nastavak
+  - čas13: Flex - nastavak -->

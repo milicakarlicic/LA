@@ -6,9 +6,9 @@ Repozitorijum sadrži materijale sa časova vježbi iz predmeta Leksička analiz
   - čas01: Kompilatori i interpretatori. Azbuka. Jezik. Definicija regularnih jezika i izraza.
   - čas02: Proširenja regularnih izraza. Gramzivost. Lenjo izračunavanje. Sidra. [Kalkulator](https://regexr.com/) za rad sa regularnim izrazima.
   - čas03: Grupisanje teksta. Preduvidi i postuvidi. Terminal. Program _grep_.
+  - čas04: Programi: _wc_, _uniq_, _head_, _tail_, _sed_, _sort_.
   <!--
-  - čas04: Terminal, grep, uniq, head, tail
-  - čas05: Sed, sort
+  - čas04: Terminal, grep, 
   - čas06: Uvod u programski jezik Python
   - čas07: Rad sa regularnim izrazima u programskom jeziku Python
   - čas08: Regularni izrazi - nastavak, json, html

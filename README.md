@@ -8,8 +8,8 @@ Repozitorijum sadrži materijale sa časova vježbi iz predmeta Leksička analiz
   - čas03: Grupisanje teksta. Preduvidi i postuvidi. Terminal. Program _grep_.
   - čas04: Programi: _wc_, _uniq_, _head_, _tail_, _sed_, _sort_.
   - čas05: Nastavak. Uvod u programski jezik _Python_.
+  - čas06: Rad sa regularnim izrazima u programskom jeziku _Python_.
   <!--
-  - čas07: Rad sa regularnim izrazima u programskom jeziku Python
   - čas08: Regularni izrazi - nastavak, json, html
   - čas09: Regularni izrazi - nastavak, obilazak direktorijuma
   - čas10: Konačni automati, konstrukcija Tompsona, minimalizacija

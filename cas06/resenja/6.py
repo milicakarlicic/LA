@@ -5,7 +5,7 @@ import re
 s = input('Unesite string: ')
 
 rezultat = re.fullmatch(r'\w+', s)
-if rezultat is None:
+if rezultat == None:
     print('Nije rec')
 else:
     print('Jeste rec')

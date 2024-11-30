@@ -1,6 +1,6 @@
 #!/bin/python3
 
-import sys, os, re, funkcije1
+import sys, os, re, funkcije_1
 
 if len(sys.argv) != 2:
     sys.exit('Pozivanje: ./1.py putanja_do_dir')
@@ -32,8 +32,8 @@ for alas in os.listdir(putanja_do_dir):
         ekstenzija = rez.group(2)
         studenti[(alas, broj_zadatka)] = ekstenzija
 
-svi_studenti = funkcije1.procitaj_sve_studente(\
+svi_studenti = funkcije_1.procitaj_sve_studente(\
 os.path.join(putanja_do_dir, 'indeksi.txt'))
 
-funkcije1.kreiraj_html_tabelu(os.path.join(putanja_do_dir, 'ispit.html')\
-, studenti, svi_studenti)
+funkcije_1.kreiraj_html_tabelu(os.path.join(putanja_do_dir, 'ispit.html'),\
+studenti, svi_studenti)

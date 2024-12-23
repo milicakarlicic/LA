@@ -17,7 +17,13 @@ BELINA      [ \t\n]
 
 %%
 
-[+-]?{CIFRA}+                                   { return CELOBROJNA_KONSTANTA; }
+[+-]?{CIFRA}+                                   { 
+    /*
+     * U slucaju da smo prepoznali celobrojnu konstantu vracamo odgovarajuci token
+     */
+
+    return CELOBROJNA_KONSTANTA; 
+}
 
 [+-]?{CIFRA}+\.{CIFRA}*([Ee][+-]{CIFRA}+)?      { return REALNA_KONSTANTA; }
 

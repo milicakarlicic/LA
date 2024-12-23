@@ -14,7 +14,7 @@
 #define DIREKTIVA               5
 #define KARAKTER                6
 
-// neophodna deklaracija
+// Neophodna deklaracija
 void ispisi(char *tekst);
 
 %}

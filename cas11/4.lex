@@ -11,7 +11,12 @@
 
 %%
 
-"//".*                              { }
+"//".*                              {
+    /* 
+     * Prazna akcija u slucaju da smo naisli na jednolinijski komentar. Na taj
+     * nacin postizemo brisanje odgovarajucih delova koda
+     */
+ }
 
 "/*"([^*]|[*][^/])*"*/"             { }
 

@@ -11,9 +11,7 @@ Repozitorijum sadrži materijale sa časova vježbi iz predmeta Leksička analiz
   - čas06: Rad sa regularnim izrazima u programskom jeziku _Python_. Modul _re_.
   - čas07: Programski jezik _Python_ - nastavak. Modul _json_.
   - čas08: Programski jezik _Python_ - nastavak. Moduli: _os_, _shutil_.
-  <!--
-  - čas09: Regularni izrazi - nastavak, obilazak direktorijuma
-  - čas10: Konačni automati, konstrukcija Tompsona, minimalizacija
-  - čas11: Konstrukcija Gluškova, proizvod automata, transduktori
-  - čas12: Flex
-  - čas13: Flex - nastavak -->
+  - čas09: Konačni automati. Konstrukcija Tompsona. Minimalizacija.
+  - čas10: Konstrukcija Gluškova. Proizvod automata. Transduktori.
+  - čas11: Flex.
+  - čas12: Flex - nastavak.

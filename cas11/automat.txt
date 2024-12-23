@@ -1,0 +1,18 @@
+# sadrzaj datoteke
+# Ovo je datoteka sa automatom.
+# U sledecoj liniji se nalazi azbuka automata.
+azbuka: a -   g
+# bla bla
+# U narednoj se nalaze stanja, a potom
+# su navedeni pocetno stanje i zavrsna stanja
+stanja: 0 - 3
+pocetna: 0
+zavrsna: 2   	3
+# Slede prelazi, u svakom redu po jedan
+0 a 1
+0 c 2
+1 b 3
+2 a 3
+3 a 3
+3 b 3
+3 c 3

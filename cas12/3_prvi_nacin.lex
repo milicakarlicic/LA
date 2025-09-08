@@ -82,5 +82,8 @@ int main(int argc, char **argv) {
     }
     fprintf(yyout, "</body></html></pre>");
 
+    fclose(yyin);
+    fclose(yyout);
+
     return 0;
 }

@@ -2,13 +2,9 @@
 
 import re
 
-tekst = input('Unesite tekst: ')
-reci = re.split('\s+', tekst)
+s = input('Unesite string: ')
 
-brojac = 0
-for rec in reci:
-    rezultat = re.fullmatch(r'\w+[,.!?]?', rec)
-    if rezultat != None:
-        brojac += 1
+rezultat = re.finditer(r'a+', s)
 
-print('Broj reci je ' + str(brojac))
+for poklapanje in rezultat:
+    print(f'Poklopljeno: ' + poklapanje.group() + ', pocetak - ' + str(poklapanje.start()) + ', kraj - ' + str(poklapanje.end()))

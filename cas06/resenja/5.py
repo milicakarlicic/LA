@@ -4,7 +4,8 @@ import re
 
 s = input('Unesite string: ')
 
-rezultat = re.finditer(r'a+', s)
-
-for poklapanje in rezultat:
-    print(f'Poklopljeno: ' + poklapanje.group() + ', pocetak - ' + str(poklapanje.start()) + ', kraj - ' + str(poklapanje.end()))
+rezultat = re.match(r'pocetak', s, re.I)
+if rezultat != None:
+    print('Nalazi se')
+else:
+    print('Ne nalazi se')

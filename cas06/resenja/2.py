@@ -1,11 +1,19 @@
 #!/usr/bin/python3
 
-import re
+def zbir(x, y):
+    return x + y
 
-s = input('Unesite string: ')
+def razlika(x, y):
+    return x - y
 
-rezultat = re.match(r'pocetak', s, re.I)
-if rezultat != None:
-    print('Nalazi se')
-else:
-    print('Ne nalazi se')
+def ispis(x):
+    print(x)
+
+x = int(input('Unesite 1. broj: '))
+y = int(input('Unesite 2. broj: '))
+
+print(f'Zbir je:')
+ispis(zbir(x, y))
+
+print('Razlika je:')
+ispis(razlika(x, y))

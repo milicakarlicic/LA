@@ -4,5 +4,7 @@ import re
 
 s = input('Unesite string: ')
 
-novi_s = re.sub(r'a+', 'X', s, flags = re.I)
-print(novi_s)
+rezultat = re.findall(r'a+', s)
+n = len(rezultat)
+for i in range(n):
+    print(str(i) + '. poklapanje je: ' + rezultat[i])
